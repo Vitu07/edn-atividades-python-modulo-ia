@@ -12,7 +12,7 @@ notas = [7.5, 8, 6.5]
 media = 0
 
 for i in range(0, len(notas), 1):
-  print(notas[i])
+  print(f"Nota {i+1}:", notas[i])
   media += notas[i]
 
 media/len(notas)
