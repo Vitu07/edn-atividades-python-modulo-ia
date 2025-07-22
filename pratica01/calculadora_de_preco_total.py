@@ -15,6 +15,6 @@ quantidade_do_produto = 3
 preco_total_do_produto = preco_do_produto * quantidade_do_produto
 
 print(f"Nome do produto: {nome_do_produto}")
-print(f"Preço unitario do produto: {preco_do_produto:.2f}")
+print(f"Preço unitario do produto: R$ {preco_do_produto:.2f}")
 print(f"quantidade do poduto: {quantidade_do_produto}")
-print(f"Preço total do produto: {preco_total_do_produto:.2f}")
+print(f"Preço total do produto: R$ {preco_total_do_produto:.2f}")
