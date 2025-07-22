@@ -1,4 +1,5 @@
-"""4- Calculadora de Preço Total
+"""
+4- Calculadora de Preço Total
 * Desenvolva um programa que calcula o preço total de uma compra. 
 * Use as seguintes informações:
 
@@ -6,7 +7,8 @@
 * Preço unitário: R$ 12.40
 * Quantidade: 3
 
-* O programa deve calcular o preço total e exibir todas as informações, incluindo o resultado final."""
+* O programa deve calcular o preço total e exibir todas as informações, incluindo o resultado final.
+"""
 
 nome_do_produto = "Cadeira Infantil"
 preco_do_produto = 12.4
