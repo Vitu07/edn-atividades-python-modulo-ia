@@ -27,13 +27,13 @@ for i in range(0, tamanho_senha, 1):
   senha_segura.append(random.choice(todos_caracteres))
 
 if not any(c in letras_maiusculas for c in senha_segura):
-  senha_segura[random.randint(0, len(senha_segura))] = random.choices(letras_maiusculas)
+  senha_segura[random.randint(0, tamanho_senha-1)] = random.choice(letras_maiusculas)
 if not any(c in letras_minusculas for c in senha_segura):
-  senha_segura[random.randint(0, len(senha_segura))] = random.choices(letras_minusculas)
+  senha_segura[random.randint(0, tamanho_senha-1)] = random.choice(letras_minusculas)
 if not any(c in numeros for c in senha_segura):
-  senha_segura[random.randint(0, len(senha_segura))] = random.choices(numeros)
+  senha_segura[random.randint(0, tamanho_senha-1)] = random.choice(numeros)
 if not any(c in simbolos for c in senha_segura):
-  senha_segura[random.randint(0, len(senha_segura))] = random.choices(simbolos)
+  senha_segura[random.randint(0, tamanho_senha-1)] = random.choice(simbolos)
 
 for c in senha_segura:
   senha = senha + c
