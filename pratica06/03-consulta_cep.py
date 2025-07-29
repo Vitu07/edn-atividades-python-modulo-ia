@@ -13,9 +13,10 @@ Dica: Use o módulo `requests` e trate exceções com `try/except`.
 import requests
 
 try:
-  cep = int(input("Informe um CEP(apenas número, sem traço): "))
-  cep = str(cep)
-  if len(cep) == 7: cep = "0" + cep
+  cep = input("Informe um CEP(apenas número, sem traço): ")
+  
+  if not cep.isdigit():
+    raise ValueError
 
   response = requests.get(f"https://viacep.com.br/ws/{cep}/json/")
   
